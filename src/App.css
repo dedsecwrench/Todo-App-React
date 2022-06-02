@@ -1,0 +1,370 @@
+body{
+  padding:15px;
+  background-color: black ;
+}
+
+.container_1{
+  display:flex;
+  justify-content: space-between;
+  margin:auto;
+  width:75%;
+  margin-top: 3rem;
+  /* border : 1px solid rgb(255, 255, 255); */
+  height:fit-content;
+  position:relative;
+  top:0px;
+  flex-wrap: wrap;
+}
+
+.top_1{
+  font-size: 50px;
+  text-align: left;
+  color: rgb(102, 225, 233);
+  font-family: sans-serif;
+  /* border: 1px solid blue; */
+}
+
+.top_2{
+  font-size: 30px;
+  text-align: right;
+  font-family: sans-serif;
+  padding: 20px;
+  font-weight:lighter;
+  color: rgb(113, 113, 113);
+  /* border: 1px solid red; */
+  width: 20rem;
+}
+
+.btnborder{
+  /* border: 1px solid white; */
+}
+
+.iconplus{
+  position: relative;
+}
+
+.container_2{
+  display:flex;
+  justify-content: space-around;
+  margin:auto;
+  width:80%;
+  height:fit-content;
+  position:relative;
+  top:0px;
+  column-gap: 40px;
+  row-gap:30px;
+  /* border:1px solid white; */
+}
+
+.cards{
+  height:400px;
+  width:290px;
+  /* border:1px solid rgb(242, 69, 69); */
+  border:1px solid rgb(69, 225, 242);
+  border-radius: 10px;
+  text-align: center;
+  padding:30px;
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(11, 11, 11);
+  /* box-shadow: 10px 10px 10px rgb(216, 215, 215); */
+}
+
+h2{
+  font-weight: lighter;
+  /* color:rgb(242, 69, 69); */
+  color:white;
+}
+
+hr.hr_style{
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0));
+}
+
+.cardText{
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  font-size: 25px;
+  position:relative;
+  top:40px;
+  color:rgb(244, 55, 55);
+}
+
+.form{
+  font-size:22px;
+  position: relative;
+  top:60px;
+}
+
+strong{
+  color:rgb(38, 38, 38);
+}  
+
+.addCard{
+  height:240px;
+  width:450px;
+  border:1px solid rgb(242, 69, 69);
+  border-radius: 10px;
+  text-align: center;
+  padding:10px;
+  position: fixed;
+  left: 50%;
+  top:32%;
+  transform: translate(-50%, 0);
+  z-index:200;
+  background-color: white;
+  /* box-shadow: 10px 10px 10px rgb(216, 215, 215); */
+}
+
+.form2{
+  font-size:22px;
+  padding:10px;
+}
+
+.add_head{
+  font-size: 25px;
+  color:rgb(242, 69, 69);
+  position: relative;
+  top:15px;
+}
+#addtext,#additemtext{
+  width:330px;
+  border:1px solid rgb(242, 69, 69);
+  border-radius: 5px;
+  height:45px;
+  box-shadow: 3px 3px 5px rgb(216, 215, 215);
+}
+
+input[type="text"]:focus{
+  outline: none;
+  padding-left: 5px;
+  /* color: rgb(255, 104, 104); */
+}
+
+.btn-success:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width:50%;
+  padding:20px;
+  gap: 20px;
+  font-size: 50px;
+}
+
+h1:before,h1:after {
+  content: "";
+  flex:1;
+  border-bottom: var(--color);
+  /* border-bottom: 1px solid rgb(0, 0, 0); */
+  margin: auto;
+  width:50%;
+}
+
+.center_card{
+  height:470px;
+  width:420px;
+  border:1px solid rgb(69, 225, 242);
+  border-radius: 10px;
+  text-align: center;
+  margin:auto;
+  padding:30px;
+  position: relative;
+  bottom:90px;
+  margin-top: 8rem;
+}
+
+.del{
+  position : absolute;
+  height:35px;
+  width:35px;
+  border-radius: 50%;
+  background-color : rgb(242, 69, 69);
+  color : white;
+  border:none;
+  bottom: 15px;
+  left: 15rem;
+}
+.del:hover{
+  background-color : rgb(148, 38, 38);
+  color : white;
+}
+
+.del-centered{
+  position : absolute;
+  height:35px;
+  width:35px;
+  border-radius: 50%;
+  background-color : rgb(242, 69, 69);
+  color : white;
+  border:none;
+  bottom: 15px;
+  left: 23rem;
+}
+.del-centered:hover{
+  background-color : rgb(148, 38, 38);
+  color : white;
+}
+
+.plus-centered{
+  position : absolute;
+  height:35px;
+  width:35px;
+  bottom: 15px;
+  left: 20rem;
+  border-radius : 50%;
+  background-color : rgb(69, 138, 242);
+  color : white;
+  border:none;
+}
+.plus-centered:hover{
+  background-color : rgb(43, 86, 150);
+  color : white;
+}
+
+.mkbtn{
+  width:110px;
+  height: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(137, 206, 33) ;
+  color:white;
+  border-radius: 10px;
+  position:relative;
+  top:7px;
+  border:none;
+}
+.mkbtn:hover{
+  background-color: rgb(71, 108, 15) ;
+  color:white;
+}
+
+#mk-text{
+  position: relative;
+  bottom: 6px;
+}
+
+#head-sec{
+  border:none;
+  background: transparent;
+}
+
+.inDiv{
+  position: relative;
+  right:10px;
+  width:250px;
+  height: 190px;
+  overflow: auto;
+  padding: 3px;
+  padding-top: 7px;
+  /* border:1px solid white; */
+}
+
+.title{
+  overflow-wrap: break-word;
+  cursor: pointer;
+  font-size: xx-large;
+  padding-bottom: 15px;
+}
+
+#showww{
+  height:50px;
+  width:500px;
+  font-size: 40px;
+  color: rgb(130, 130, 130);
+  position: relative;
+  left:200px;
+  /* border: 1px solid white; */
+}
+
+.top_back{
+  font-size: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 20px;
+  font-weight:lighter;
+  color: rgb(113, 113, 113);
+  /* border: 1px solid red; */
+}
+
+.back_btn{
+  height:4rem;
+  width:11rem;
+  border-radius: 50px;
+  color:white;
+  background-color: rgb(242, 69, 69); 
+  border:none;
+}
+
+.container_4{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+}
+.center-title{
+  font-size: 4rem;
+  color: white;
+}
+
+.ul{
+  list-style-type:none;
+}
+
+.li-center{
+  color: white;
+  font-size: 20px;
+}
+
+.li{
+  color: white;
+  font-size: 17px;
+}
+
+
+.insideDiv{
+  position: relative;
+  right:35px;
+  width:340px;
+  height: 430px;
+  left: 0.5rem;
+  overflow: auto;
+  padding: 3px;
+  /* border:1px solid white; */
+}
+
+.del-item{
+  height:19px;
+  width:80px;
+  border-radius: 10px;
+  background-color : rgb(242, 69, 69);
+  color : white;
+  border:none;
+}
+.del-span{
+  bottom: 7px;
+}
+.del-item:hover{
+  background-color : rgb(148, 38, 38);
+  color : white;
+}
+
+.add_btn{
+  border:none;
+  background-color: rgb(242, 69, 69);
+  color:white;
+  height:45px;
+  width:100px;
+  border-radius: 25px;
+  font-size: 24px;
+  position: relative;
+  bottom:10px;
+}
+
+.inputaddbox{
+  color: rgb(242, 69, 69);
+}
